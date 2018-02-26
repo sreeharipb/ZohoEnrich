@@ -6,10 +6,7 @@ int main()
   long long int x=n,c=0;
   while(x>0)
   {
-    if(x%2==1) 
-    {
-      c++;
-    }
+    c+=(x%2==1);
     x=x/2;
   }
   
