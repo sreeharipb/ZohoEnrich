@@ -1,21 +1,26 @@
 #include<stdio.h>
+#include<stdlib.h>
+
 int main()
 {
-  char num[200];
-  scanf("%s",num);
-  int n,i,l=strlen(num);
-  scanf("%d",&n);
-  n=n%l;
+  long long int num,n,div,temp,l=0;
+  scanf("%lld",&num);
+  scanf("%lld",&n);
   
-  for(i=l-n;i<l;i++)
+  temp=num;
+  while(temp>=1)
   {
-    printf("%c",num[i]);
+    l++;
+    temp=temp/10;
   }
-  for(i=0;i<l-n;i++)
-  {
-    printf("%c",num[i]);
-  }
+
+  n=n%l;
+  div=pow(10,n);
+  
+  printf("%lld%lld",num%div,num/div);
+ 
   return 0;
 }
+  
     
   
