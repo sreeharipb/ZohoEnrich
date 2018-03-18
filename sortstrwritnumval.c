@@ -10,7 +10,7 @@ int main(void)
     for(i=0;i<n;i++)
     {
         sign[i]=1;
-        prez[i]=0;
+      
     }
 
     for(i=0;i<n;i++)
